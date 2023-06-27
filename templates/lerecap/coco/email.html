@@ -1,0 +1,8 @@
+{% extends 'lerecap/base.html' %}
+
+{% block content %}
+    <div style='display: flex;'>
+        <h1 class='text-danger'>bonjour {{ user.username }}</h1>
+        <p>Bienvenue dans notre équipe, vous êtes actuellement {{ user.role.role }}</p>
+    </div>
+{% endblock content %}

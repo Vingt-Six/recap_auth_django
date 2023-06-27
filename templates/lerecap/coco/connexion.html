@@ -1,0 +1,16 @@
+{% extends 'lerecap/base.html' %}
+
+{% block content %}
+    <form method='POST'>
+        {% csrf_token %}
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingPassword" placeholder="mail@mail.com" name='username'>
+            <label for="floatingPassword">Username</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" name='password'>
+            <label for="floatingPassword">Password</label>
+          </div>
+          <button type="submit" class='btn btn-outline-secondary w-100'>Se connecter</button>
+    </form>
+{% endblock content %}
